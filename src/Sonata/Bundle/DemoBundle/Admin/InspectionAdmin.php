@@ -73,8 +73,6 @@ class InspectionAdmin extends Admin
         ));
 
         $formMapper->add('date', null, array('widget' => 'single_text'));
-        $formMapper->add('inspector', 'sonata_type_model_autocomplete', array(
-            'property' => 'username'
-        ));
+        $formMapper->add('inspector', 'sonata_type_admin');
     }
 }
